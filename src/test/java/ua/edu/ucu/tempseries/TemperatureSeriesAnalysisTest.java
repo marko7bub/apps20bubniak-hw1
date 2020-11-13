@@ -94,7 +94,7 @@ public class TemperatureSeriesAnalysisTest {
         TemperatureSeriesAnalysis seriesAnalysis = new TemperatureSeriesAnalysis(temperatureSeries);
         double[] expResult = {33.2, 45.31207, 1.0, 120.0};
         TempSummaryStatistics actualResult = seriesAnalysis.summaryStatistics();
-        assertArrayEquals(expResult, actualResult.SummaryArray(), 0.00001);
+        assertArrayEquals(expResult, actualResult.summaryArray(), 0.00001);
     }
 
     @Test(expected = InputMismatchException.class)
